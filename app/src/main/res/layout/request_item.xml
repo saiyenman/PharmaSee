@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="100dp" android:id="@+id/linearLayout"
+                                                   android:layout_marginTop="4dp">
+
+
+    <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.MaterialComponents.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="8dp" app:cardUseCompatPadding="true" app:cardPreventCornerOverlap="true"
+            app:layout_constraintBottom_toBottomOf="parent" app:cardElevation="0dp" android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp" android:layout_marginEnd="8dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="5dp" app:layout_constraintBottom_toBottomOf="parent">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    tools:text="Adresse"
+                    app:layout_constraintStart_toEndOf="@+id/request_image"
+                    android:layout_marginStart="16dp" app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/request_item_description"
+                    app:layout_constraintVertical_bias="0.0" android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/divider2"/>
+            <ImageView
+                    android:layout_width="70dp"
+                    android:id="@+id/request_image"
+                    android:layout_height="70dp" app:srcCompat="@mipmap/pharmacie"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            />
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/request_item_status" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            <View
+                    android:id="@+id/divider2"
+                    android:layout_width="1dp"
+                    android:layout_height="65dp"
+                    android:background="?android:attr/listDivider"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/request_item_status" android:layout_marginEnd="6dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

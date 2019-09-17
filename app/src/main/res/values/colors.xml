@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#4CAF50</color>
+    <color name="pharmOpen">#74EE43</color>
+    <color name="pharmClosed">#FC3333</color>
+    <color name="lightGray">#FDFDFD</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>
